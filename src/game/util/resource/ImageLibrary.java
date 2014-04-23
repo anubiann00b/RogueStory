@@ -20,7 +20,6 @@ public enum ImageLibrary {
             try {
                 image = ResourceLoader.initializeImage(filepath);
             } catch (SlickException e) {
-                System.out.println("Error loading resources! " + e);
                 throw new RuntimeException("Error loading resources! " + e);
             }
         }
