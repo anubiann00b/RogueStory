@@ -21,12 +21,14 @@ public class Player extends GameObject {
     }
     
     @Override
+    /** Called once to initialize player. */
     public void init(GameContainer container) {
         sprite = ImageLibrary.TEST.getImage();
         in = container.getInput();
     }
     
     @Override
+    /** Called every frame to update state. */
     public void update(int delta) {
         int dx = 0;
         int dy = 0;
@@ -45,6 +47,7 @@ public class Player extends GameObject {
     }
     
     @Override
+    /** Called every frame to render player. */
     public void render(Graphics g) {
         g.drawImage(sprite,x,y);
     }

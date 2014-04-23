@@ -22,17 +22,20 @@ public class StatePlaying extends BasicGameState {
     }
     
     @Override
+    /** Called once at beginning of game. */
     public void init(GameContainer container, StateBasedGame game) throws SlickException {
         player = new Player();
         player.init(container);
     }
     
     @Override
+    /** Called every frame to update game state. */
     public void update(GameContainer container, StateBasedGame game, int delta) throws SlickException {
         player.update(delta);
     }
     
     @Override
+    /** Called every frame to draw game state. */
     public void render(GameContainer container, StateBasedGame game, Graphics g) throws SlickException {
         player.render(g);
     }

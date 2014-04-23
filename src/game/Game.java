@@ -27,6 +27,7 @@ public class Game extends StateBasedGame {
     }
 
     @Override
+    /** Used to initalize the states that are to be used in the game. */
     public void initStatesList(GameContainer container) throws SlickException {
         this.addState(new StatePlaying(STATE_PLAYING));
     }
